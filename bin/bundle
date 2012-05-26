@@ -1,0 +1,15 @@
+#!/usr/bin/env coffee
+
+program = require 'commander'
+bundler = require '../lib/bundler'
+
+program
+    .version('0.0.1')
+    .option('-c --conf [file]', 'configuration file to use')
+    .option('-o --out [dir]', 'output directory')
+    .parse(process.argv)
+
+program.conf ||= 'bundle.json'
+program.out ||= 'out'
+
+bundler(program)

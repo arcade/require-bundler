@@ -1,0 +1,18 @@
+{
+    "name": "require-bundler",
+    "description": "Dependency bundler",
+    "version": "0.0.1",
+    "engines": {
+        "node": ">= 0.6"
+    },
+    "directories": {
+        "lib": "./lib"
+    },
+    "bin": {
+        "bundle": "./bin/bundle"
+    },
+    "dependencies": {
+        "coffee-script": "1.3.x",
+        "commander": "0.6.x"
+    }
+}
